@@ -5,3 +5,35 @@
     alt="Lyna Selmani Interactive Terminal"
   />
 </p>
+
+<p align="center">
+  <code>lyna@github:~$</code> <strong>ls ~/projects</strong>
+</p>
+
+<p align="center">
+  <a href="https://github.com/SELMANI-Lyna/Lit">
+    <code>LITAN-LLM/</code>
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/SELMANI-Lyna/CommandBase">
+    <code>CommandBase/</code>
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/SELMANI-Lyna/Glproject">
+    <code>Glproject/</code>
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/SELMANI-Lyna/E-commerce">
+    <code>E-commerce/</code>
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/SELMANI-Lyna/Network-Labs">
+    <code>Network-Labs/</code>
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/SELMANI-Lyna/Security-Labs">
+    <code>Security-Labs/</code>
+  </a>
+</p>
