@@ -1,0 +1,511 @@
+<svg width="900" height="520" viewBox="0 0 900 520"
+     xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+
+    <!-- Background -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#07000f"/>
+      <stop offset="50%" stop-color="#11001d"/>
+      <stop offset="100%" stop-color="#050008"/>
+    </linearGradient>
+
+    <!-- Pink / purple gradient -->
+    <linearGradient id="pinkPurple" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#b85cff"/>
+      <stop offset="50%" stop-color="#ff4fd8"/>
+      <stop offset="100%" stop-color="#ff8ce8"/>
+    </linearGradient>
+
+    <!-- Progress gradient -->
+    <linearGradient id="progress" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#ff5bd8"/>
+    </linearGradient>
+
+    <!-- Glow -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="smallGlow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Blinking cursor -->
+    <style>
+      .terminal {
+        font-family: monospace;
+        font-size: 15px;
+      }
+
+      .title {
+        font-family: monospace;
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      .text {
+        font-family: monospace;
+        font-size: 13px;
+      }
+
+      .purple {
+        fill: #c084fc;
+      }
+
+      .pink {
+        fill: #ff72dc;
+      }
+
+      .white {
+        fill: #f7eaff;
+      }
+
+      .muted {
+        fill: #9d7bb5;
+      }
+
+      .cursor {
+        animation: blink 1s infinite;
+      }
+
+      .pulse {
+        animation: pulse 2s infinite ease-in-out;
+      }
+
+      .float {
+        animation: float 4s infinite ease-in-out;
+      }
+
+      @keyframes blink {
+        0%, 45% { opacity: 1; }
+        46%, 100% { opacity: 0; }
+      }
+
+      @keyframes pulse {
+        0%, 100% { opacity: .55; }
+        50% { opacity: 1; }
+      }
+
+      @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-5px); }
+      }
+    </style>
+
+  </defs>
+
+
+  <!-- ================= BACKGROUND ================= -->
+
+  <rect width="900" height="520" rx="22" fill="url(#bg)"/>
+
+  <!-- Outer glow -->
+  <rect x="4" y="4" width="892" height="512"
+        rx="20"
+        fill="none"
+        stroke="url(#pinkPurple)"
+        stroke-width="2"
+        filter="url(#glow)"/>
+
+  <!-- Terminal header -->
+  <rect x="5" y="5" width="890" height="52"
+        rx="18"
+        fill="#0b0015"/>
+
+  <line x1="5" y1="57" x2="895" y2="57"
+        stroke="#7226b5"
+        stroke-width="1"/>
+
+
+  <!-- ================= TERMINAL BUTTONS ================= -->
+
+  <circle cx="31" cy="31" r="8" fill="#ff5fd7"/>
+  <circle cx="56" cy="31" r="8" fill="#c45cff"/>
+  <circle cx="81" cy="31" r="8" fill="#8b5cf6"/>
+
+  <text x="365" y="36"
+        class="title"
+        fill="#f4d9ff">
+    ♥  lyna@github: ~
+  </text>
+
+
+  <!-- ================= LEFT TERMINAL ================= -->
+
+  <text x="30" y="88" class="terminal pink">
+    lyna@github:~$ whoami
+  </text>
+
+  <text x="30" y="110" class="terminal white">
+    lyna
+  </text>
+
+
+  <text x="30" y="145" class="terminal pink">
+    lyna@github:~$ cat about.txt
+  </text>
+
+  <text x="30" y="169" class="terminal purple">
+    Computer Science Student
+  </text>
+
+  <text x="30" y="190" class="terminal purple">
+    | Building a better tomorrow with code ♥
+  </text>
+
+
+  <text x="30" y="225" class="terminal pink">
+    lyna@github:~$ cat interests.txt
+  </text>
+
+  <text x="30" y="250" class="terminal purple">
+    &gt; Cybersecurity
+  </text>
+
+  <text x="30" y="272" class="terminal purple">
+    &gt; Artificial Intelligence / LLMs
+  </text>
+
+  <text x="30" y="294" class="terminal purple">
+    &gt; Full-Stack Development
+  </text>
+
+  <text x="30" y="316" class="terminal purple">
+    &gt; Networking
+  </text>
+
+  <text x="30" y="338" class="terminal purple">
+    &gt; Linux
+  </text>
+
+
+  <text x="30" y="375" class="terminal pink">
+    lyna@github:~$ ls ~/projects
+  </text>
+
+  <text x="30" y="398" class="terminal purple">
+    LITAN-LLM/
+  </text>
+
+  <text x="155" y="398" class="terminal purple">
+    ComandBase/
+  </text>
+
+  <text x="285" y="398" class="terminal purple">
+    DZ-Fit/
+  </text>
+
+
+  <text x="30" y="430" class="terminal pink">
+    lyna@github:~$ git status
+  </text>
+
+  <text x="30" y="452" class="terminal purple">
+    On branch main
+  </text>
+
+  <text x="30" y="473" class="terminal pink">
+    Your workspace is clean. ♥
+  </text>
+
+
+  <text x="30" y="502" class="terminal pink">
+    lyna@github:~$
+  </text>
+
+  <rect x="150" y="489"
+        width="10"
+        height="17"
+        fill="#ff72dc"
+        class="cursor"/>
+
+
+  <!-- ================= CAT ================= -->
+
+  <g class="float"
+     transform="translate(390 105)"
+     fill="none"
+     stroke="#ff72dc"
+     stroke-width="2">
+
+    <path d="M15 35
+             L25 5
+             L43 20
+             Q65 8 87 20
+             L105 5
+             L110 38
+             Q115 70 65 72
+             Q15 70 15 35Z"/>
+
+    <circle cx="48" cy="38" r="2" fill="#ff72dc"/>
+    <circle cx="82" cy="38" r="2" fill="#ff72dc"/>
+
+    <path d="M62 48 Q65 53 68 48"/>
+    <path d="M65 53 Q57 60 50 54"/>
+    <path d="M65 53 Q73 60 80 54"/>
+
+  </g>
+
+
+  <!-- stars -->
+
+  <g class="pulse" fill="#ff72dc">
+
+    <text x="380" y="88" font-size="18">✦</text>
+    <text x="460" y="125" font-size="14">✦</text>
+    <text x="520" y="85" font-size="12">+</text>
+    <text x="355" y="150" font-size="12">+</text>
+
+  </g>
+
+
+  <!-- ================= CURRENT PROJECTS ================= -->
+
+  <rect x="365" y="190"
+        width="275"
+        height="205"
+        rx="13"
+        fill="#0d0019"
+        stroke="#8224d6"
+        stroke-width="1.5"/>
+
+  <text x="385" y="218"
+        class="title"
+        fill="#f3d5ff">
+    ✦ Currently Working On
+  </text>
+
+  <line x1="380" y1="230"
+        x2="625" y2="230"
+        stroke="#4f177d"/>
+
+
+  <!-- Project 1 -->
+
+  <text x="390" y="257"
+        class="title"
+        fill="#ff72dc">
+    ◈  LITAN-LLM
+  </text>
+
+  <text x="390" y="276"
+        class="text"
+        fill="#b993cf">
+    LLM Interaction Tracker
+  </text>
+
+  <rect x="390" y="286"
+        width="210"
+        height="8"
+        rx="4"
+        fill="#1b0730"/>
+
+  <rect x="390" y="286"
+        width="190"
+        height="8"
+        rx="4"
+        fill="url(#progress)"/>
+
+  <text x="607" y="294"
+        class="text pink">
+    90%
+  </text>
+
+
+  <!-- Project 2 -->
+
+  <text x="390" y="325"
+        class="title"
+        fill="#ff72dc">
+    ◈  ComandBase
+  </text>
+
+  <text x="390" y="344"
+        class="text"
+        fill="#b993cf">
+    Cybersecurity Knowledge Hub
+  </text>
+
+  <rect x="390" y="354"
+        width="210"
+        height="8"
+        rx="4"
+        fill="#1b0730"/>
+
+  <rect x="390" y="354"
+        width="130"
+        height="8"
+        rx="4"
+        fill="url(#progress)"/>
+
+  <text x="607" y="362"
+        class="text pink">
+    60%
+  </text>
+
+
+  <!-- Project 3 -->
+
+  <text x="390" y="388"
+        class="title"
+        fill="#ff72dc">
+    ◈  DZ-Fit
+  </text>
+
+
+  <!-- ================= RIGHT PANEL ================= -->
+
+  <rect x="660" y="75"
+        width="210"
+        height="150"
+        rx="13"
+        fill="#0d0019"
+        stroke="#7226b5"
+        stroke-width="1.5"/>
+
+  <text x="680" y="103"
+        class="title"
+        fill="#f3d5ff">
+    GitHub Stats
+  </text>
+
+  <line x1="675" y1="114"
+        x2="855" y2="114"
+        stroke="#4f177d"/>
+
+  <text x="680" y="140" class="text purple">
+    Repositories
+  </text>
+
+  <text x="825" y="140" class="text pink">
+    42
+  </text>
+
+  <text x="680" y="163" class="text purple">
+    Commits
+  </text>
+
+  <text x="825" y="163" class="text pink">
+    1.2k
+  </text>
+
+  <text x="680" y="186" class="text purple">
+    Contributions
+  </text>
+
+  <text x="825" y="186" class="text pink">
+    1.8k
+  </text>
+
+
+  <!-- ================= STATUS PANEL ================= -->
+
+  <rect x="660" y="240"
+        width="210"
+        height="160"
+        rx="13"
+        fill="#0d0019"
+        stroke="#7226b5"
+        stroke-width="1.5"/>
+
+  <text x="680" y="269"
+        class="title"
+        fill="#f3d5ff">
+    Currently...
+  </text>
+
+  <line x1="675" y1="280"
+        x2="855" y2="280"
+        stroke="#4f177d"/>
+
+  <text x="680" y="310" class="text purple">
+    ◯ Learning
+  </text>
+
+  <text x="680" y="335" class="text purple">
+    ◯ Building projects
+  </text>
+
+  <text x="680" y="360" class="text purple">
+    ◯ Improving my skills
+  </text>
+
+  <text x="680" y="385" class="text pink">
+    ♥ Still a work in progress...
+  </text>
+
+
+  <!-- ================= TECH STACK ================= -->
+
+  <rect x="365" y="410"
+        width="275"
+        height="90"
+        rx="13"
+        fill="#0d0019"
+        stroke="#8224d6"
+        stroke-width="1.5"/>
+
+  <text x="385" y="437"
+        class="title"
+        fill="#f3d5ff">
+    ◇ Tech Stack
+  </text>
+
+  <text x="385" y="463"
+        class="text pink">
+    Python
+  </text>
+
+  <text x="445" y="463"
+        class="text purple">
+    TypeScript
+  </text>
+
+  <text x="535" y="463"
+        class="text purple">
+    JavaScript
+  </text>
+
+  <text x="385" y="485"
+        class="text purple">
+    React
+  </text>
+
+  <text x="445" y="485"
+        class="text purple">
+    Next.js
+  </text>
+
+  <text x="515" y="485"
+        class="text pink">
+    FastAPI
+  </text>
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <line x1="20" y1="512"
+        x2="880" y2="512"
+        stroke="#7226b5"/>
+
+  <text x="30" y="515"
+        class="text pink">
+    ♥ Lyna Selmani
+  </text>
+
+  <text x="690" y="515"
+        class="text purple">
+    CS Student | Cybersecurity | AI
+  </text>
+
+</svg>
