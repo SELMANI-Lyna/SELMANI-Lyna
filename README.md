@@ -128,17 +128,17 @@
     <text x="58" y="130" class="prompt">lyna@github:~$</text>
     <text x="270" y="130" class="cmd typing4"> ls ~/projects</text>
 
-    <a href="https://github.com/SELMANI-Lyna/Lit" target="_blank">
+    <a href="https://github.com/SELMANI-Lyna/Lit" target="https://github.com/SELMANI-Lyna/Lit">
       <text x="75" y="185" class="project">LITAN-LLM/</text>
     </a>
     <text x="290" y="185" class="muted">LLM interaction tracking &amp; experimentation</text>
 
-    <a href="https://github.com/SELMANI-Lyna/ComandBase" target="_blank">
+    <a href="https://github.com/SELMANI-Lyna/ComandBase" target="https://github.com/SELMANI-Lyna/CommandBase">
       <text x="75" y="230" class="project">ComandBase/</text>
     </a>
     <text x="290" y="230" class="muted">cybersecurity commands &amp; tools knowledge base</text>
 
-    <a href="https://github.com/SELMANI-Lyna/DZ-Fit" target="_blank">
+    <a href="https://github.com/SELMANI-Lyna/DZ-Fit" target="https://github.com/SELMANI-Lyna/Glproject">
       <text x="75" y="275" class="project">DZ-Fit/</text>
     </a>
     <text x="290" y="275" class="muted">gym finder • maps • FastAPI • Next.js</text>
