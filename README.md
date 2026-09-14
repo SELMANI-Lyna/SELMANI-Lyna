@@ -1,3 +1,7 @@
-<a href="https://selmani-lyna.github.io/">
-  <img src="https://img.shields.io/badge/OPEN_INTERACTIVE_TERMINAL-ff70dc?style=for-the-badge&logo=github&logoColor=white">
-</a>
+<p align="center">
+  <img
+    src="https://github.com/user-attachments/assets/b75e1967-1d3c-4f2c-998f-841c51c2683a"
+    width="1200"
+    alt="Lyna Selmani Interactive Terminal"
+  />
+</p>
