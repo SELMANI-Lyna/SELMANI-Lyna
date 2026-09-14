@@ -1,3 +1,6 @@
+<div align="center">
+  <img src="./assets/terminal.svg" width="900" alt="Lyna's terminal">
+</div>
 # Hi, I'm Lyna 👋
 
 ### Computer Science Student | Cybersecurity | AI & LLMs | Full-Stack Development
